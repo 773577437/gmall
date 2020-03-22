@@ -2,6 +2,7 @@ package com.test.gmall.oms.mapper;
 
 import com.test.gmall.oms.entity.OrderItem;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.springframework.stereotype.Repository;
 
 /**
  * <p>
@@ -11,6 +12,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author Lfy
  * @since 2020-02-22
  */
+@Repository
 public interface OrderItemMapper extends BaseMapper<OrderItem> {
 
 }

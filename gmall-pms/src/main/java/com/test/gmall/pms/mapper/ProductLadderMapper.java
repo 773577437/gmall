@@ -2,6 +2,7 @@ package com.test.gmall.pms.mapper;
 
 import com.test.gmall.pms.entity.ProductLadder;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.springframework.stereotype.Repository;
 
 /**
  * <p>
@@ -11,6 +12,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author Lfy
  * @since 2020-02-22
  */
+@Repository
 public interface ProductLadderMapper extends BaseMapper<ProductLadder> {
 
 }

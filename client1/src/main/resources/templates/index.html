@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<!--需要导thymeleaf包-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+    <h1>欢迎<label th:text="${username1}">xx</label>!</h1>
+    <!--返回认证中心-->
+    <a th:href="${ssoUrl}">退出</a>
+</body>
+</html>

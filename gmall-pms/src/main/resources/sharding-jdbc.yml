@@ -1,0 +1,16 @@
+dataSources:
+  db_master: !!com.zaxxer.hikari.HikariDataSource
+    driverClassName: com.mysql.cj.jdbc.Driver
+    jdbcUrl: jdbc:mysql://192.168.1.70:3306/gmall_pms?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: root
+  db_slave: !!com.zaxxer.hikari.HikariDataSource
+    driverClassName: com.mysql.cj.jdbc.Driver
+    jdbcUrl: jdbc:mysql://192.168.1.70:3316/gmall_pms?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: root
+  #数据源名称：db_master，db_slave在下面配置，添加从数据源则 [db_slave, db_slave_01],添加的数据源名称对应 db_slave_01
+masterSlaveRule:
+  name: db_ms
+  masterDataSourceName: db_master
+  slaveDataSourceNames: [db_slave]

@@ -2,6 +2,8 @@ package com.test.gmall.pms.mapper;
 
 import com.test.gmall.pms.entity.ProductAttributeCategory;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import jdk.nashorn.internal.ir.annotations.Reference;
+import org.springframework.stereotype.Repository;
 
 /**
  * <p>
@@ -11,6 +13,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author Lfy
  * @since 2020-02-22
  */
+@Repository
 public interface ProductAttributeCategoryMapper extends BaseMapper<ProductAttributeCategory> {
 
 }

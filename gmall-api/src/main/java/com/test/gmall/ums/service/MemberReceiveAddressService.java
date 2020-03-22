@@ -1,7 +1,10 @@
 package com.test.gmall.ums.service;
 
+import com.alibaba.dubbo.config.annotation.Service;
 import com.test.gmall.ums.entity.MemberReceiveAddress;
 import com.baomidou.mybatisplus.extension.service.IService;
+
+import java.util.List;
 
 /**
  * <p>
@@ -13,4 +16,10 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface MemberReceiveAddressService extends IService<MemberReceiveAddress> {
 
+    /**
+     * 根据会员id获取会员收货地址信息
+     * @param id
+     * @return
+     */
+    List<MemberReceiveAddress> getMemberReceiveAddressList(Long id);
 }

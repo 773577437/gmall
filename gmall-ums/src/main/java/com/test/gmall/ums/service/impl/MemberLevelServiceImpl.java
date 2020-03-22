@@ -14,6 +14,7 @@ import org.springframework.stereotype.Service;
  * @author Lfy
  * @since 2020-02-22
  */
+@com.alibaba.dubbo.config.annotation.Service
 @Service
 public class MemberLevelServiceImpl extends ServiceImpl<MemberLevelMapper, MemberLevel> implements MemberLevelService {
 

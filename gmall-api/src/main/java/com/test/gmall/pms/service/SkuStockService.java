@@ -1,7 +1,11 @@
 package com.test.gmall.pms.service;
 
+import com.test.gmall.oms.entity.OrderItem;
 import com.test.gmall.pms.entity.SkuStock;
 import com.baomidou.mybatisplus.extension.service.IService;
+
+import java.util.HashMap;
+import java.util.List;
 
 /**
  * <p>

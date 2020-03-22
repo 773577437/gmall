@@ -1,8 +1,14 @@
 package com.test.gmall.oms;
 
+import com.alibaba.dubbo.config.spring.context.annotation.EnableDubbo;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.jms.annotation.EnableJms;
 
+@EnableJms
+@EnableDubbo
+@MapperScan("com.test.gmall.oms.mapper")
 @SpringBootApplication
 public class GmallOmsApplication {
 
